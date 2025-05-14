@@ -1,0 +1,77 @@
+{
+  "name": "Multi-system: 20 Regional Attributes for COVID-19 Data",
+  "description": "Attributes for 20 regions in Victoria, Australia, including health and demographic indicators.",
+  "num_records": 20,
+  "columns": [
+    {
+      "name": "region",
+      "type": "string",
+      "description": "region name"
+    },
+    {
+      "name": "Type 2 diabete ratio (%)",
+      "type": "number",
+      "description": "Type 2 diabete ratio (%)"
+    },
+    {
+      "name": "Two, or more, chronic diseases ration (%)",
+      "type": "number",
+      "description": "Two, or more, chronic diseases ration (%)"
+    },
+    {
+      "name": "Chronic heart disease ratio (%)",
+      "type": "number",
+      "description": "Chronic heart disease ratio (%)"
+    },
+    {
+      "name": "Obesity rate (%)",
+      "type": "number",
+      "description": "Obesity rate (%)"
+    },
+    {
+      "name": "Prevalence of respiratory system diseases (%)",
+      "type": "number",
+      "description": "Prevalence of respiratory system diseases (%)"
+    },
+    {
+      "name": "Asthma (ever diagnosed) ratio (%)",
+      "type": "number",
+      "description": "Asthma (ever diagnosed) ratio (%)"
+    },
+    {
+      "name": "Daily smoker (%)",
+      "type": "number",
+      "description": "Daily smoker (%)"
+    },
+    {
+      "name": "Vaccines 1 (%)",
+      "type": "number",
+      "description": "Vaccines 1 coverage rate"
+    },
+    {
+      "name": "Vaccines 2 (%)",
+      "type": "number",
+      "description": "Vaccines 2 coverage rate"
+    },
+    {
+      "name": "Vaccines 3 (%)",
+      "type": "number",
+      "description": "Vaccines 3 coverage rate"
+    },
+    {
+      "name": "Ratio of Employed people for Hospitals",
+      "type": "number",
+      "description": "Ratio of Employed people for Hospitals"
+    },
+    {
+      "name": "Median weekly household income (AUD)",
+      "type": "number",
+      "description": "Median weekly household income (AUD)"
+    },
+    {
+      "name": "Median age",
+      "type": "number",
+      "description": "Median age"
+    }
+  ]
+}

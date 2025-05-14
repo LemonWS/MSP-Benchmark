@@ -1,0 +1,97 @@
+{
+  "name": "Multi-system: 20 Synthetic Target Variables and Two Attributes",
+  "title": "Multi-system: 20 Synthetic Target Variables and Two Attributes",
+  "description": "A synthetic dataset containing 20 time‐series target variables and their associated attribute variables.",
+  "version": "1.0.0",
+  "keywords": [
+    "synthetic",
+    "time series",
+    "attributes"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "resources": [
+    {
+      "name": "synthetic_data_20_Target",
+      "path": "Synthetic Data 20.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "primaryKey": "order",
+        "fields": [
+          { "name": "order",        "type": "integer" },
+          { "name": "Target 1",     "type": "number" },
+          { "name": "attribute 1a",  "type": "number" },
+          { "name": "attribute 1b",  "type": "number" },
+          { "name": "Target 2",     "type": "number" },
+          { "name": "attribute 2a","type": "number" },
+          { "name": "attribute 2b","type": "number" },
+          { "name": "Target 3",     "type": "number" },
+          { "name": "attribute 3a","type": "number" },
+          { "name": "attribute 3b","type": "number" },
+          { "name": "Target 4",     "type": "number" },
+          { "name": "attribute 4a","type": "number" },
+          { "name": "attribute 4b","type": "number" },
+          { "name": "Target 5",     "type": "number" },
+          { "name": "attribute 5a","type": "number" },
+          { "name": "attribute 5b","type": "number" },
+          { "name": "Target 6",     "type": "number" },
+          { "name": "attribute 6a",  "type": "number" },
+          { "name": "attribute 6b",  "type": "number" },
+          { "name": "Target 7",     "type": "number" },
+          { "name": "attribute 7a","type": "number" },
+          { "name": "attribute 7b","type": "number" },
+          { "name": "Target 8",     "type": "number" },
+          { "name": "attribute 8a","type": "number" },
+          { "name": "attribute 8b","type": "number" },
+          { "name": "Target 9",     "type": "number" },
+          { "name": "attribute 9a","type": "number" },
+          { "name": "attribute 9b","type": "number" },
+          { "name": "Target 10",     "type": "number" },
+          { "name": "attribute 10a","type": "number" },
+          { "name": "attribute 10b","type": "number" },
+          { "name": "Target 11",     "type": "number" },
+          { "name": "attribute 11a",  "type": "number" },
+          { "name": "attribute 11b",  "type": "number" },
+          { "name": "Target 12",     "type": "number" },
+          { "name": "attribute 12a","type": "number" },
+          { "name": "attribute 12b","type": "number" },
+          { "name": "Target 13",     "type": "number" },
+          { "name": "attribute 13a","type": "number" },
+          { "name": "attribute 13b","type": "number" },
+          { "name": "Target 14",     "type": "number" },
+          { "name": "attribute 14a","type": "number" },
+          { "name": "attribute 14b","type": "number" },
+          { "name": "Target 15",     "type": "number" },
+          { "name": "attribute 15a","type": "number" },
+          { "name": "attribute 15b","type": "number" },
+          { "name": "Target 16",     "type": "number" },
+          { "name": "attribute 16a",  "type": "number" },
+          { "name": "attribute 16b",  "type": "number" },
+          { "name": "Target 17",     "type": "number" },
+          { "name": "attribute 17a","type": "number" },
+          { "name": "attribute 17b","type": "number" },
+          { "name": "Target 18",     "type": "number" },
+          { "name": "attribute 18a","type": "number" },
+          { "name": "attribute 18b","type": "number" },
+          { "name": "Target 19",     "type": "number" },
+          { "name": "attribute 19a","type": "number" },
+          { "name": "attribute 19b","type": "number" },
+          { "name": "Target 20",     "type": "number" },
+          { "name": "attribute 20a","type": "number" },
+          { "name": "attribute 20b","type": "number" }
+        ]
+      },
+      "dialect": {
+        "delimiter": ",",
+        "header": true
+      }
+    }
+  ]
+}

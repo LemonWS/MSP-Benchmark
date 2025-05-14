@@ -1,0 +1,77 @@
+{
+  "profile": "data-package",
+  "name": "Muti-system: Commodity ETFs",
+  "title": "Muti-system: Commodity ETFs Historical Daily Data",
+  "description": "Daily OHLCV and adjusted close data for 88 Exchange-Traded Funds (ETFs). Each CSV file is named by its ticker symbol (e.g., SPY.csv, QQQ.csv) and follows the same schema.Target variable is \"adj_close\".",
+  "version": "1.0.0",
+  "keywords": [
+    "ETF",
+    "daily",
+    "historical",
+    "OHLCV",
+    "adjusted close"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "resources": [
+    {
+      "name": "88 ETF Daily Prices",
+      "title": "88 ETFs Daily Prices",
+      "path": "*.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+      },
+      "schema": {
+        "primaryKey": ["date"],
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "yyyy-MM-dd",
+            "description": "Trading date (YYYY-MM-DD)"
+          },
+          {
+            "name": "open",
+            "type": "number",
+            "description": "Opening price"
+          },
+          {
+            "name": "high",
+            "type": "number",
+            "description": "Highest price of the day"
+          },
+          {
+            "name": "low",
+            "type": "number",
+            "description": "Lowest price of the day"
+          },
+          {
+            "name": "close",
+            "type": "number",
+            "description": "Closing price"
+          },
+          {
+            "name": "adj_close",
+            "type": "number",
+            "description": "Adjusted closing price, target variable"
+          },
+          {
+            "name": "volume",
+            "type": "integer",
+            "description": "Trading volume"
+          }
+        ]
+      }
+    }
+  ]
+}

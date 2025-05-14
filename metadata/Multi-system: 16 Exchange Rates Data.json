@@ -1,0 +1,39 @@
+{
+  "profile": "data-package",
+  "name": "Multi-system: 16 Exchange Rates",
+  "title": "Daily 16 Exchange Rates based on USD",
+  "description": "Daily exchange rates for 16 currencies based on USD. Each CSV file is named by its currency code (e.g., ARS.csv, EUR.csv) and shares the same schema. \"Adj Close\" is target value.",
+  "version": "1.0.0",
+  "keywords": [
+    "exchange rates",
+    "currency",
+    "financial data",
+    "time series"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "resources": [
+    {
+      "name": "Daily 16 Exchange Rates",
+      "title": "Daily 16 Exchange Rates",
+      "path": "*.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {"name": "Date", "type": "string", "format": "%d-%b-%y", "description": "Date in DD-MMM-YY format"},
+          {"name": "Open", "type": "number", "description": "Opening exchange rate"},
+          {"name": "High", "type": "number", "description": "Highest exchange rate of the day"},
+          {"name": "Low", "type": "number", "description": "Lowest exchange rate of the day"},
+          {"name": "Close", "type": "number", "description": "Closing exchange rate"},
+          {"name": "Adj Close", "type": "number", "description": "Adjusted closing exchange rate, target variable"}
+        ]
+      }
+    }
+  ]
+}

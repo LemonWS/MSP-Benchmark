@@ -1,0 +1,77 @@
+{
+  "profile": "data-package",
+  "name": "Multi-system: Full Stocks of S&P500 Health Care Index",
+  "title": "Multi-system: Full Stocks of S&P500 Health Care Index, Historical Daily Stock Data",
+  "description": "Daily data for all 62 companies in the S&P 500 health care index. Each CSV file is named by its ticker symbol (e.g., ABBV-history.csv) and shares the same schema.Target variable is \"adj_close\".",
+  "version": "1.0.0",
+  "keywords": [
+    "S&P 500",
+    "stocks",
+    "daily",
+    "OHLCV",
+    "adjusted close"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "resources": [
+    {
+      "name": "S&P 500 Health Care Index Stocks Daily Prices",
+      "title": "S&P 500 Health Care Index Stocks Daily Prices",
+      "path": "*.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+      },
+      "schema": {
+        "primaryKey": ["date"],
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "yyyy-MM-dd",
+            "description": "Trading date"
+          },
+          {
+            "name": "open",
+            "type": "number",
+            "description": "Opening price"
+          },
+          {
+            "name": "high",
+            "type": "number",
+            "description": "Highest price of the day"
+          },
+          {
+            "name": "low",
+            "type": "number",
+            "description": "Lowest price of the day"
+          },
+          {
+            "name": "close",
+            "type": "number",
+            "description": "Closing price"
+          },
+          {
+            "name": "adj_close",
+            "type": "number",
+            "description": "Adjusted closing price, target variable"
+          },
+          {
+            "name": "volume",
+            "type": "integer",
+            "description": "Trading volume"
+          }
+        ]
+      }
+    }
+  ]
+}

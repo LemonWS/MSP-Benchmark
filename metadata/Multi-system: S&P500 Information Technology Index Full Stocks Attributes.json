@@ -1,0 +1,553 @@
+{
+  "profile": "data-package",
+  "name": "Multi-system: Full Stocks Attributes of S&P500 Information Technology Index",
+  "title": "Multi-system: 82 Stocks in S&P 500 Information Technology Index Constituent Financial Attributes",
+  "description": "Financial and market data for the 82 companies in the S&P 500 Information Technology index. Each CSV file is named by its ticker symbol and follows this schema with 107 attributes.",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "resources": [
+    {
+      "name": "S&P 500 Information Technology Financial Attributes",
+      "title": "S&P 500 Information Technology Financial Attributes",
+      "path": "*.csv",
+      "format": "csv",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "yyyy-MM-dd",
+            "description": "Trading date or period end in YYYY-MM-DD format"
+          },
+          {
+            "name": "Revenue",
+            "type": "number",
+            "description": "Total sales or revenue for the period"
+          },
+          {
+            "name": "Revenue Growth",
+            "type": "number",
+            "description": "Period-over-period percentage change in revenue"
+          },
+          {
+            "name": "Cost of Revenue",
+            "type": "number",
+            "description": "Direct costs of goods sold or services delivered"
+          },
+          {
+            "name": "Gross Profit",
+            "type": "number",
+            "description": "Revenue minus Cost of Revenue"
+          },
+          {
+            "name": "Selling, General & Admin",
+            "type": "number",
+            "description": "Operating expenses for sales, marketing, and corporate overhead"
+          },
+          {
+            "name": "Research & Development",
+            "type": "number",
+            "description": "Expenses on R&D activities for new products or services"
+          },
+          {
+            "name": "Operating Expenses",
+            "type": "number",
+            "description": "All non-COGS operating costs, including SG&A and R&D"
+          },
+          {
+            "name": "Other Operating Expenses",
+            "type": "number",
+            "description": "Non-recurring operating expenses outside the usual run rate"
+          },
+          {
+            "name": "Operating Income",
+            "type": "number",
+            "description": "Gross Profit minus total Operating Expenses"
+          },
+          {
+            "name": "Interest Expense / Income",
+            "type": "number",
+            "description": "Net interest paid or earned"
+          },
+          {
+            "name": "Other Expense / Income",
+            "type": "number",
+            "description": "Non-operating gains or losses"
+          },
+          {
+            "name": "Pretax Income",
+            "type": "number",
+            "description": "Operating Income plus/minus non-operating items, before tax"
+          },
+          {
+            "name": "Income Tax",
+            "type": "number",
+            "description": "Tax expense recorded for the period"
+          },
+          {
+            "name": "Net Income",
+            "type": "number",
+            "description": "Pretax Income minus Income Tax"
+          },
+          {
+            "name": "Preferred Dividends",
+            "type": "number",
+            "description": "Dividends paid to preferred shareholders"
+          },
+          {
+            "name": "Net Income Common",
+            "type": "number",
+            "description": "Net Income available to common shareholders"
+          },
+          {
+            "name": "Net Income Growth",
+            "type": "number",
+            "description": "Period-over-period percentage change in Net Income"
+          },
+          {
+            "name": "Shares Outstanding (Basic)",
+            "type": "number",
+            "description": "Weighted average basic shares outstanding"
+          },
+          {
+            "name": "Net Income",
+            "type": "number",
+            "description": "The final profit obtained by the company after deducting all expenses"
+          },
+          {
+            "name": "Shares Outstanding (Diluted)",
+            "type": "number",
+            "description": "Weighted average fully diluted shares outstanding"
+          },
+          {
+            "name": "Shares Change",
+            "type": "number",
+            "description": "Percentage change in shares outstanding"
+          },
+          {
+            "name": "EPS (Basic)",
+            "type": "number",
+            "description": "Net Income Common divided by basic shares"
+          },
+          {
+            "name": "EPS (Diluted)",
+            "type": "number",
+            "description": "Net Income Common divided by diluted shares"
+          },
+          {
+            "name": "EPS Growth",
+            "type": "number",
+            "description": "Period-over-period percentage change in EPS"
+          },
+          {
+            "name": "Free Cash Flow Per Share",
+            "type": "number",
+            "description": "Free Cash Flow divided by basic shares outstanding"
+          },
+          {
+            "name": "Dividend Per Share",
+            "type": "number",
+            "description": "Total dividends paid divided by basic shares outstanding"
+          },
+          {
+            "name": "Dividend Growth",
+            "type": "number",
+            "description": "Period-over-period percentage change in dividends per share"
+          },
+          {
+            "name": "Gross Margin",
+            "type": "number",
+            "description": "Gross Profit as a percentage of Revenue"
+          },
+          {
+            "name": "Operating Margin",
+            "type": "number",
+            "description": "Operating Income as a percentage of Revenue"
+          },
+          {
+            "name": "Profit Margin",
+            "type": "number",
+            "description": "Net Income as a percentage of Revenue"
+          },
+          {
+            "name": "Free Cash Flow Margin",
+            "type": "number",
+            "description": "Free Cash Flow as a percentage of Revenue"
+          },
+          {
+            "name": "Effective Tax Rate",
+            "type": "number",
+            "description": "Income Tax divided by Pretax Income"
+          },
+          {
+            "name": "EBITDA",
+            "type": "number",
+            "description": "Earnings before interest, tax, depreciation, and amortization"
+          },
+          {
+            "name": "EBITDA Margin",
+            "type": "number",
+            "description": "EBITDA as a percentage of Revenue"
+          },
+          {
+            "name": "Depreciation & Amortization",
+            "type": "number",
+            "description": "Non-cash charges for asset depreciation and intangible amortization"
+          },
+          {
+            "name": "EBIT",
+            "type": "number",
+            "description": "Earnings before interest and tax (Operating Income)"
+          },
+          {
+            "name": "EBIT Margin",
+            "type": "number",
+            "description": "EBIT as a percentage of Revenue"
+          },
+          {
+            "name": "Cash & Equivalents",
+            "type": "number",
+            "description": "Cash on hand and short-term liquid investments"
+          },
+          {
+            "name": "Short-Term Investments",
+            "type": "number",
+            "description": "Marketable securities convertible within one year"
+          },
+          {
+            "name": "Cash & Cash Equivalents",
+            "type": "number",
+            "description": "Total of Cash & Equivalents and Short-Term Investments"
+          },
+          {
+            "name": "Cash Growth",
+            "type": "number",
+            "description": "Period-over-period change in Cash & Equivalents"
+          },
+          {
+            "name": "Receivables",
+            "type": "number",
+            "description": "Accounts receivable from customers"
+          },
+          {
+            "name": "Inventory",
+            "type": "number",
+            "description": "Raw materials, work-in-process, and finished goods"
+          },
+          {
+            "name": "Other Current Assets",
+            "type": "number",
+            "description": "Current assets not separately classified"
+          },
+          {
+            "name": "Total Current Assets",
+            "type": "number",
+            "description": "Sum of all current assets"
+          },
+          {
+            "name": "Property, Plant & Equipment",
+            "type": "number",
+            "description": "Net book value of tangible fixed assets"
+          },
+          {
+            "name": "Long-Term Investments",
+            "type": "number",
+            "description": "Investments held beyond one year"
+          },
+          {
+            "name": "Goodwill and Intangibles",
+            "type": "number",
+            "description": "Purchased intangible assets and goodwill"
+          },
+          {
+            "name": "Other Long-Term Assets",
+            "type": "number",
+            "description": "Non-current assets not elsewhere classified"
+          },
+          {
+            "name": "Total Long-Term Assets",
+            "type": "number",
+            "description": "Sum of all non-current assets"
+          },
+          {
+            "name": "Total Assets",
+            "type": "number",
+            "description": "Total Current Assets plus Total Long-Term Assets"
+          },
+          {
+            "name": "Accounts Payable",
+            "type": "number",
+            "description": "Amounts owed to suppliers"
+          },
+          {
+            "name": "Deferred Revenue",
+            "type": "number",
+            "description": "Payments received in advance of delivery"
+          },
+          {
+            "name": "Current Debt",
+            "type": "number",
+            "description": "Short-term borrowings due within one year"
+          },
+          {
+            "name": "Total Current Liabilities",
+            "type": "number",
+            "description": "Sum of liabilities due within one year"
+          },
+          {
+            "name": "Other Current Liabilities",
+            "type": "number",
+            "description": "Current obligations not elsewhere classified"
+          },
+          {
+            "name": "Long-Term Debt",
+            "type": "number",
+            "description": "Borrowings due after one year"
+          },
+          {
+            "name": "Total Long-Term Liabilities",
+            "type": "number",
+            "description": "Sum of liabilities due after one year"
+          },
+          {
+            "name": "Other Long-Term Liabilities",
+            "type": "number",
+            "description": "Non-debt long-term obligations"
+          },
+          {
+            "name": "Total Liabilities",
+            "type": "number",
+            "description": "Total Current Liabilities plus Total Long-Term Liabilities"
+          },
+          {
+            "name": "Total Debt",
+            "type": "number",
+            "description": "Current Debt plus Long-Term Debt"
+          },
+          {
+            "name": "Debt Growth",
+            "type": "number",
+            "description": "Period-over-period percentage change in Total Debt"
+          },
+          {
+            "name": "Retained Earnings",
+            "type": "number",
+            "description": "Accumulated net income minus dividends"
+          },
+          {
+            "name": "Comprehensive Income",
+            "type": "number",
+            "description": "Net Income adjusted for other comprehensive items"
+          },
+          {
+            "name": "Shareholders Equity",
+            "type": "number",
+            "description": "Total Assets minus Total Liabilities"
+          },
+          {
+            "name": "Net Cash / Debt",
+            "type": "number",
+            "description": "Cash & Equivalents minus Total Debt"
+          },
+          {
+            "name": "Net Cash / Debt Growth",
+            "type": "number",
+            "description": "Period-over-period change in Net Cash / Debt"
+          },
+          {
+            "name": "Net Cash Per Share",
+            "type": "number",
+            "description": "Net Cash / Debt divided by basic shares outstanding"
+          },
+          {
+            "name": "Working Capital",
+            "type": "number",
+            "description": "Total Current Assets minus Total Current Liabilities"
+          },
+          {
+            "name": "Book Value Per Share",
+            "type": "number",
+            "description": "Shareholders’ Equity divided by basic shares outstanding"
+          },
+          {
+            "name": "Share-Based Compensation",
+            "type": "number",
+            "description": "Non-cash expense related to equity awards"
+          },
+          {
+            "name": "Other Operating Activities",
+            "type": "number",
+            "description": "Cash impacts from non-standard operating items"
+          },
+          {
+            "name": "Operating Cash Flow",
+            "type": "number",
+            "description": "Cash generated from core business operations"
+          },
+          {
+            "name": "Operating Cash Flow Growth",
+            "type": "number",
+            "description": "Period-over-period change in Operating Cash Flow"
+          },
+          {
+            "name": "Capital Expenditures",
+            "type": "number",
+            "description": "Cash spent on acquiring or maintaining fixed assets"
+          },
+          {
+            "name": "Acquisitions",
+            "type": "number",
+            "description": "Cash used for business acquisitions"
+          },
+          {
+            "name": "Change in Investments",
+            "type": "number",
+            "description": "Net cash flow from investment purchases or sales"
+          },
+          {
+            "name": "Other Investing Activities",
+            "type": "number",
+            "description": "Cash flows from other investing activities"
+          },
+          {
+            "name": "Investing Cash Flow",
+            "type": "number",
+            "description": "Net cash from investing activities"
+          },
+          {
+            "name": "Dividends Paid",
+            "type": "number",
+            "description": "Cash distributed to shareholders as dividends"
+          },
+          {
+            "name": "Share Issuance / Repurchase",
+            "type": "number",
+            "description": "Cash flows from issuing or repurchasing equity"
+          },
+          {
+            "name": "Debt Issued / Paid",
+            "type": "number",
+            "description": "Cash flows from borrowing or repaying debt"
+          },
+          {
+            "name": "Other Financing Activities",
+            "type": "number",
+            "description": "Cash flows from other financing activities"
+          },
+          {
+            "name": "Financing Cash Flow",
+            "type": "number",
+            "description": "Net cash from financing activities"
+          },
+          {
+            "name": "Net Cash Flow",
+            "type": "number",
+            "description": "Sum of Operating, Investing, and Financing Cash Flows"
+          },
+          {
+            "name": "Free Cash Flow",
+            "type": "number",
+            "description": "Operating Cash Flow minus Capital Expenditures"
+          },
+          {
+            "name": "Free Cash Flow Growth",
+            "type": "number",
+            "description": "Period-over-period change in Free Cash Flow"
+          },
+          {
+            "name": "Market Capitalization",
+            "type": "number",
+            "description": "Share price multiplied by shares outstanding"
+          },
+          {
+            "name": "Market Cap Growth",
+            "type": "number",
+            "description": "Period-over-period change in Market Capitalization"
+          },
+          {
+            "name": "Enterprise Value",
+            "type": "number",
+            "description": "Market Cap plus debt minus cash"
+          },
+          {
+            "name": "PE Ratio",
+            "type": "number",
+            "description": "Share price divided by diluted EPS"
+          },
+          {
+            "name": "PS Ratio",
+            "type": "number",
+            "description": "Market Cap divided by Revenue"
+          },
+          {
+            "name": "PB Ratio",
+            "type": "number",
+            "description": "Market Cap divided by Book Value of Equity"
+          },
+          {
+            "name": "P/FCF Ratio",
+            "type": "number",
+            "description": "Market Cap divided by Free Cash Flow"
+          },
+          {
+            "name": "P/OCF Ratio",
+            "type": "number",
+            "description": "Market Cap divided by Operating Cash Flow"
+          },
+          {
+            "name": "Debt/Equity",
+            "type": "number",
+            "description": "Total Debt divided by Shareholders’ Equity"
+          },
+          {
+            "name": "Quick Ratio",
+            "type": "number",
+            "description": "(Cash & Cash Equivalents + Receivables) ÷ Current Liabilities"
+          },
+          {
+            "name": "Current Ratio",
+            "type": "number",
+            "description": "Current Assets ÷ Current Liabilities"
+          },
+          {
+            "name": "Return on Invested Capital (ROIC)",
+            "type": "number",
+            "description": "NOPAT divided by total invested capital"
+          },
+          {
+            "name": "Dividend Yield",
+            "type": "number",
+            "description": "Dividend Per Share divided by share price"
+          },
+          {
+            "name": "Payout Ratio",
+            "type": "number",
+            "description": "Dividends Per Share ÷ Diluted EPS"
+          },
+          {
+            "name": "Buyback Yield",
+            "type": "number",
+            "description": "Share repurchases ÷ Market Capitalization"
+          },
+          {
+            "name": "Total Return",
+            "type": "number",
+            "description": "Price appreciation plus dividend yield for the period"
+          }
+        ]
+      }
+    }
+  ]
+}

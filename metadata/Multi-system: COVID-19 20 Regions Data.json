@@ -1,0 +1,71 @@
+{
+  "profile": "data-package",
+  "name": "Multi-system: 20 Regions for COVID-19 Data",
+  "title": "Multi-system: Victoria State 20 Regional COVID-19 Daily Data",
+  "description": "Contains daily COVID-19 data for 20 merge regions by 79 Local Government Areas (LGAs) in Victoria State, with each file named as Region number (in .xlsx format). Target Variable is \"new\", it means daily new case.",
+  "version": "1.0.0",
+  "keywords": [
+    "COVID-19",
+    "Victoria",
+    "LGA",
+    "daily",
+    "cases"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "resources": [
+    {
+      "name": "COVID-19 Data 20 Regions in Victoria",
+      "title": " COVID-19 Data 20 Regions in Victoria",
+      "path": "*.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+        },
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "yyyy-MM-dd",
+            "description": "Observation date in YYYY-MM-DD format"
+          },
+          {
+            "name": "population",
+            "type": "integer",
+            "description": "Total population of the region"
+          },
+          {
+            "name": "active",
+            "type": "integer",
+            "description": "Number of active cases on that date"
+          },
+          {
+            "name": "rate",
+            "type": "number",
+            "description": "Cases rate"
+          },
+          {
+            "name": "new",
+            "type": "integer",
+            "description": "New cases reported on that date, target variable"
+          },
+          {
+            "name": "band",
+            "type": "integer",
+            "description": "Restriction band (higher value = higher risk in this region)"
+          }
+        ]
+      }
+    }
+  ]
+}

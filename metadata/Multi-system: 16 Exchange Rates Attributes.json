@@ -1,0 +1,55 @@
+{
+  "profile": "data-package",
+  "name": "Multi-system: 16 Exchange Rates Attributes",
+  "title": "16 Exchange Rates Attributes",
+  "description": "Attribute for 16 exchange rates in currencies and regions. Each CSV file is named by its currency or region (e.g., Argentina.csv, Australia.csv) and shares the same schema.",
+  "version": "1.0.0",
+  "keywords": [
+    "exchange rates",
+    "economic indicators",
+    "monthly"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "resources": [
+    {
+      "name": "16 Exchange Rate Attributes",
+      "title": "16 Exchange Rate Attributes",
+      "path": "*.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+      },
+      "schema": {
+        "primaryKey": ["DateTime"],
+        "fields": [
+          {"name": "DateTime", "type": "datetime", "format": "yyyy-MM-ddTHH:mm:ss", "description": "Timestamp of data collection"},
+          {"name": "Population_million", "type": "number", "description": "Population in millions"},
+          {"name": "GDP_billion_USD", "type": "number", "description": "Gross Domestic Product in billion USD"},
+          {"name": "External_Debt_million_USD", "type": "number", "description": "External debt in million USD"},
+          {"name": "Gold_Reserves_tonnes", "type": "number", "description": "Gold reserves in tonnes"},
+          {"name": "Current_Account_billion_USD", "type": "number", "description": "Current account balance in billion USD"},
+          {"name": "Inflation_Rate", "type": "number", "description": "Monthly inflation rate as a percentage"},
+          {"name": "Import_million_USD", "type": "integer", "description": "Import values in million USD"},
+          {"name": "Export_million_USD", "type": "integer", "description": "Export values in million USD"},
+          {"name": "Foreign_Direct_Investment_million_USD", "type": "number", "description": "Foreign direct investment in million USD"},
+          {"name": "Tourist_Arrivals", "type": "integer", "description": "Number of tourist arrivals"},
+          {"name": "Food_Inflation", "type": "number", "description": "Food inflation rate as a percentage"},
+          {"name": "Consumer_Price_Index_CPI", "type": "number", "description": "Consumer Price Index (CPI)"},
+          {"name": "Money_Supply_M1_billion_USD", "type": "number", "description": "Money supply M1 in billion USD"},
+          {"name": "Money_Supply_M2_billion_USD", "type": "number", "description": "Money supply M2 in billion USD"},
+          {"name": "Money_Supply_M3_billion_USD", "type": "number", "description": "Money supply M3 in billion USD"}
+        ]
+      }
+    }
+  ]
+}
