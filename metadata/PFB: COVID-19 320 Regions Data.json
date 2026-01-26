@@ -1,8 +1,8 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: 320 Regions for COVID-19 Data",
-  "title": "Multi-system: Victoria State 320 Regional COVID-19 Daily Data",
-  "description": "Contains daily COVID-19 data for 320 merge regions by 704 postcode region in Victoria State, with each file named a region number (in .xlsx format). Target Variable is \"new\", it means daily new case. Unlike the multi-systems of 20 and 79, there is no separate regional attribute data table for the 320 region multi system due to the Victorian government not providing sufficient regional attributes for 704.",
+  "name": "PFB: 320 Regions for COVID-19 Data",
+  "title": "PFB: Victoria State 320 Regional COVID-19 Daily Data",
+  "description": "Contains daily COVID-19 data for 320 merge regions by 704 postcode region in Victoria State, with each file named a region number (in .xlsx format). Target Variable is \"new\", it means daily new case. Unlike the multi-units of 20 and 79, there is no separate regional attribute data table for the 320 region due to the Victorian government not providing sufficient regional attributes for 704.",
   "version": "1.0.0",
   "keywords": [
     "COVID-19",
