@@ -1,0 +1,66 @@
+{
+  "dataset_name": "PFB: Synthetic Panel Time Series Dataset",
+  "description": "A collection of synthetic panel time series datasets generated based on the proposed data generation framework. Each dataset consists of multiple systems (units), each associated with multiple covariate time series and one target time series.",
+  "data_format": "long",
+  "structure": {
+    "indexing": {
+      "unit_id": "id",
+      "time_index": "time"
+    },
+    "variables": {
+      "target": {
+        "name": "y",
+        "description": "Target variable generated as a function of covariates and stochastic components."
+      },
+      "covariates": {
+        "prefix": "x",
+        "description": "Covariate time series independently generated according to the synthetic data generation process.",
+        "count_variable": "M"
+      }
+    }
+  },
+  "dimensions": {
+    "units": {
+      "symbol": "N",
+      "values": [5, 10, 20],
+      "description": "Number of units (systems) in the panel."
+    },
+    "covariates": {
+      "symbol": "NX",
+      "values": [5, 10, 20],
+      "description": "Number of covariates per unit."
+    },
+    "time_points": {
+      "value": 10000,
+      "description": "Number of time points per unit."
+    }
+  },
+  "generation_process": {
+    "summary": "Each covariate time series is generated independently using a combination of trend, seasonal, and stochastic components. The target variable is constructed as a linear combination of covariates with system-specific effects and additive noise.",
+    "dependencies": "Covariates are independent across dimensions, while the target variable depends on all covariates within the same unit."
+  },
+  "scalability": {
+    "note": "The number of time points included in the released datasets is chosen for practical storage and distribution considerations and does not reflect an inherent limitation of the data generation process."
+  },
+  "file_naming_convention": "panel_N{N}_NX{M}.csv",
+  "intended_use": [
+    "time series forecasting",
+    "panel data prediction",
+    "benchmarking multivariate and panel forecasting models"
+  ],
+  "reproducibility": {
+    "deterministic_generation": true,
+    "random_seed": "Optional; can be specified to reproduce identical datasets."
+  },
+  "variants": [
+    { "name": "N5_M5", "units": 5, "covariates": 5 },
+    { "name": "N5_M10", "units": 5, "covariates": 10 },
+    { "name": "N5_M20", "units": 5, "covariates": 20 },
+    { "name": "N10_M5", "units": 10, "covariates": 5 },
+    { "name": "N10_M10", "units": 10, "covariates": 10 },
+    { "name": "N10_M20", "units": 10, "covariates": 20 },
+    { "name": "N20_M5", "units": 20, "covariates": 5 },
+    { "name": "N20_M10", "units": 20, "covariates": 10 },
+    { "name": "N20_M20", "units": 20, "covariates": 20 }
+  ]
+}
