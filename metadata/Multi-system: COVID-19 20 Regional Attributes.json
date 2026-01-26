@@ -1,6 +1,6 @@
 {
-  "name": "Multi-system: 20 Regional Attributes for COVID-19 Data",
-  "description": "Attributes for 20 regions in Victoria, Australia, including health and demographic indicators.",
+  "name": "PFB: 20 Regional Attributes for COVID-19 Data",
+  "description": "Covariates for 20 regions in Victoria, Australia, including health and demographic indicators.",
   "num_records": 20,
   "columns": [
     {
