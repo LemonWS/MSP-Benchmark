@@ -1,8 +1,8 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: Full Stocks of S&P500 Attributes",
-  "title": "S&P 500 Constituent Financial Attributes",
-  "description": "Financial and market data for the 503 companies in the S&P 500 index. Each CSV file is named by its ticker symbol and follows this schema with 107 attributes.",
+  "name": "PFB: Full Stocks of S&P500 Covariates",
+  "title": "S&P 500 Constituent Financial Covariates",
+  "description": "Financial and market data for the 503 companies in the S&P 500 index. Each CSV file is named by its ticker symbol and follows this schema with 107 Covariates.",
   "version": "1.0.0",
   "licenses": [
     {
@@ -12,8 +12,8 @@
   ],
   "resources": [
     {
-      "name": "S&P 500 Financial Attributes",
-      "title": "S&P 500 Financial Attributes",
+      "name": "S&P 500 Financial Covariates",
+      "title": "S&P 500 Financial Covariates",
       "path": "*.csv",
       "format": "csv",
       "profile": "tabular-data-resource",
