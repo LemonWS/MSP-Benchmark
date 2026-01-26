@@ -1,7 +1,7 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: 16 Exchange Rates Attributes",
-  "title": "16 Exchange Rates Attributes",
+  "name": "PFB: 16 Exchange Rates Covariates",
+  "title": "16 Exchange Rates Covariates",
   "description": "Attribute for 16 exchange rates in currencies and regions. Each CSV file is named by its currency or region (e.g., Argentina.csv, Australia.csv) and shares the same schema.",
   "version": "1.0.0",
   "keywords": [
@@ -17,8 +17,8 @@
   ],
   "resources": [
     {
-      "name": "16 Exchange Rate Attributes",
-      "title": "16 Exchange Rate Attributes",
+      "name": "16 Exchange Rate Covariates",
+      "title": "16 Exchange Rate Covariates",
       "path": "*.csv",
       "format": "csv",
       "mediatype": "text/csv",
