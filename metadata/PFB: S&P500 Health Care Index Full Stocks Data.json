@@ -1,7 +1,7 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: Full Stocks of S&P500 Health Care Index",
-  "title": "Multi-system: Full Stocks of S&P500 Health Care Index, Historical Daily Stock Data",
+  "name": "PFB: Full Stocks of S&P500 Health Care Index",
+  "title": "PFB: Full Stocks of S&P500 Health Care Index, Historical Daily Stock Data",
   "description": "Daily data for all 62 companies in the S&P 500 health care index. Each CSV file is named by its ticker symbol (e.g., ABBV-history.csv) and shares the same schema.Target variable is \"adj_close\".",
   "version": "1.0.0",
   "keywords": [
