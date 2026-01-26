@@ -1,7 +1,7 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: Full Stocks of S&P500 Information Technology Index",
-  "title": "Multi-system: Full Stocks of S&P500 Information Technology Index, Historical Daily Stock Data",
+  "name": "PFB: Full Stocks of S&P500 Information Technology Index",
+  "title": "PFB: Full Stocks of S&P500 Information Technology Index, Historical Daily Stock Data",
   "description": "Daily data for all 82 companies in the S&P 500 information technology index. Each CSV file is named by its ticker symbol (e.g., ACN-history.csv) and shares the same schema.Target variable is \"adj_close\".",
   "version": "1.0.0",
   "keywords": [
