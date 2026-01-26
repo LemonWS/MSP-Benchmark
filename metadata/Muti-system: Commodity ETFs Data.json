@@ -1,7 +1,7 @@
 {
   "profile": "data-package",
-  "name": "Muti-system: Commodity ETFs",
-  "title": "Muti-system: Commodity ETFs Historical Daily Data",
+  "name": "PFB: Commodity ETFs",
+  "title": "PFB: Commodity ETFs Historical Daily Data",
   "description": "Daily OHLCV and adjusted close data for 88 Exchange-Traded Funds (ETFs). Each CSV file is named by its ticker symbol (e.g., SPY.csv, QQQ.csv) and follows the same schema.Target variable is \"adj_close\".",
   "version": "1.0.0",
   "keywords": [
