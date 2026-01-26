@@ -1,7 +1,7 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: 79 Regions for COVID-19 Data",
-  "title": "Multi-system: Victoria State 79 Regional COVID-19 Daily Data",
+  "name": "PFB: 79 Regions for COVID-19 Data",
+  "title": "PFB: Victoria State 79 Regional COVID-19 Daily Data",
   "description": "Contains daily COVID-19 data for 79 Local Government Areas (LGAs) in Victoria State, with each file named after the region (in .xlsx format).Target Variable is \"new\", it means daily new case.",
   "version": "1.0.0",
   "keywords": [
