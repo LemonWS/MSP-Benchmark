@@ -1,8 +1,8 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: Full Stocks Attributes of S&P500 Health Care Index",
-  "title": "Multi-system: 62 Stocks in S&P 500 Health Care Index Constituent Financial Attributes",
-  "description": "Financial and market data for the 62 companies in the S&P 500 health care index. Each CSV file is named by its ticker symbol and follows this schema with 107 attributes.",
+  "name": "PFB: Full Stocks Attributes of S&P500 Health Care Index",
+  "title": "PFB: 62 Stocks in S&P 500 Health Care Index Constituent Financial Covariates",
+  "description": "Financial and market data for the 62 companies in the S&P 500 health care index. Each CSV file is named by its ticker symbol and follows this schema with 107 covariates.",
   "version": "1.0.0",
   "licenses": [
     {
@@ -12,8 +12,8 @@
   ],
   "resources": [
     {
-      "name": "S&P 500 Health Care Financial Attributes",
-      "title": "S&P 500 Health Care Financial Attributes",
+      "name": "S&P 500 Health Care Financial Covariates",
+      "title": "S&P 500 Health Care Financial Covariates",
       "path": "*.csv",
       "format": "csv",
       "profile": "tabular-data-resource",
