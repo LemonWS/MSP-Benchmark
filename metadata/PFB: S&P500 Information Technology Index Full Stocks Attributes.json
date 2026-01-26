@@ -1,8 +1,8 @@
 {
   "profile": "data-package",
-  "name": "Multi-system: Full Stocks Attributes of S&P500 Information Technology Index",
-  "title": "Multi-system: 82 Stocks in S&P 500 Information Technology Index Constituent Financial Attributes",
-  "description": "Financial and market data for the 82 companies in the S&P 500 Information Technology index. Each CSV file is named by its ticker symbol and follows this schema with 107 attributes.",
+  "name": "PFB: Full Stocks Attributes of S&P500 Information Technology Index",
+  "title": "PFB: 82 Stocks in S&P 500 Information Technology Index Constituent Financial Covariates",
+  "description": "Financial and market data for the 82 companies in the S&P 500 Information Technology index. Each CSV file is named by its ticker symbol and follows this schema with 107 covariates.",
   "version": "1.0.0",
   "licenses": [
     {
@@ -12,8 +12,8 @@
   ],
   "resources": [
     {
-      "name": "S&P 500 Information Technology Financial Attributes",
-      "title": "S&P 500 Information Technology Financial Attributes",
+      "name": "S&P 500 Information Technology Financial Covariates",
+      "title": "S&P 500 Information Technology Financial Covariates",
       "path": "*.csv",
       "format": "csv",
       "profile": "tabular-data-resource",
